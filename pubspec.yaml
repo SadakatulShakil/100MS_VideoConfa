@@ -38,6 +38,29 @@ dependencies:
   hms_room_kit: ^1.0.7
   hmssdk_flutter: ^1.9.4
   permission_handler: ^11.0.0
+  flutter_launcher_icons: ^0.13.1
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/images/video_confa.png"  # Replace with the path to your icon image
+  adaptive_icon_background: "#FFFFFF"  # Background color for Android Adaptive Icon
+  adaptive_icon_foreground: "assets/images/video_confa.png"  # Icon foreground for Android Adaptive Icon
+  image_path_ios: "assets/images/video_confa.png"  # iOS icon (if different)
+  android_icons:
+    - name: "ic_launcher"
+      adaptive_icon_background: "#FFFFFF"  # Background color for Android Launcher Icon
+      adaptive_icon_foreground: "assets/images/video_confa.png"  # Icon foreground for Android Launcher Icon
+      playstore: true  # Generate an icon for the Play Store listing
+  ios_icons:
+    - name: "AppIcon"  # iOS AppIcon is a required name
+      sizes:
+        - 120x120
+        - 180x180
+        - 1024x1024
+      unselected_sizes:
+        - 25x25
+      ios_image: "assets/images/video_confa.png"
 
 dev_dependencies:
   flutter_test:
